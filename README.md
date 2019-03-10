@@ -2,7 +2,7 @@
 
 Script that can clone worpdress from one domain to another on the same server. If cloning from another server, run script from 
 destination server. However, if you may have to tweak the path of source wp if it is coming from another server. Basicaly, one can change on the line 25: `source_dir` and put data from another server.    
-Good for massive cloning or you're just sick of those wordpress cloning.  
+Good for massive cloning or you're just sick of the wordpress cloning.  
 
 Script will:
 
@@ -26,7 +26,7 @@ $ whmapi1 createacct username=domainuser domain=domain.com plan=default featurel
 
 Owner can be root or reseller username.
 
-I was tempted to put this part in the script, but it may end badly, especially if the domain name is someting like *brandeditem* or *apartments*, it may have a collision with an existing name.
+I was tempted to put this part in the script, but it may end badly, especially if part of the domain name is someting that can be duplicated, it may have a collision with an existing name.
 
 ### Usage ###
 The script is interactive (for good or bad part)   
@@ -39,22 +39,22 @@ Script will interactively ask for inputs:
 
 Example
 ```
-root@branded2 [~]# ./wpclone.sh 
+root@server [~]# ./wpclone.sh 
 Enter created cpanel (linux) user name for wp destination?
-camelbak
+foouser
 Enter the old domain name - source of wp
-bettonipens.com
+bar.com
 Enter domain name for destination wp? (leave blank if the same as "old" domain name)
-camelbak.brandeditems.com
-Destination path will be /home/camelbak/public_html. If this is ok, leave blank and press Enter. 
-For other destination directory, enter the name of the directory - relative path within /home/camelbak (directory must exist)
+foo.com
+Destination path will be /home/foouser/public_html. If this is ok, leave blank and press Enter. 
+For other destination directory, enter the name of the directory - relative path within /home/foouser (directory must exist)
 
 Input is following:
-Destination cpanel user: camelbak
-Destination domain name: camelbak.brandeditems.com 
-Source wp directory: /home/bettonipens/public_html 
-Old domain name: bettonipens.com 
-Destination path for wp: /home/camelbak/public_html 
+Destination cpanel user: foouser
+Destination domain name: foo.com 
+Source wp directory: /home/bar/public_html 
+Old domain name: bar.com 
+Destination path for wp: /home/foouser/public_html 
 Continue?  [y/n]: 
 ....
 ```
