@@ -1,7 +1,7 @@
 ## Clone wp script ##
 
 Script that can clone worpdress from one domain to another on the same server. If cloning from another server, run script from 
-destination server. However, if you may have to tweak the path of source wp if it is coming from another server. Basicaly, one can change on the line 25: `source_dir` and put data from another server.    
+destination server. However, you may have to tweak the path of source wp if it is coming from another server. Basicaly, one can change on the line 25: `source_dir` and put data from another server.    
 Good for massive cloning or you're just sick of the wordpress cloning.  
 
 Script will:
